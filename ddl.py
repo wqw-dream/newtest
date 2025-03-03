@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS appkey_ratio (
 
 # 插入示例数据
 data = [
-    ('abc', '0.1', 'video', '202501'),
-    ('def', '0.1', 'video', '202501'),
+    ('com.sankuai.model.maas.api', '0.1', 'video', '202501'),
+    ('com.sankuai.model.maas.search', '0.1', 'video', '202501'),
 ]
 
 cursor.executemany('INSERT INTO appkey_ratio (appkey, ratio, biz_type, version) VALUES (?,?,?,?)', data)
